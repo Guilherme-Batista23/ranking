@@ -1,0 +1,27 @@
+.background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("R.jfif");
+    opacity: 0.3;
+    z-index: -1;
+    width: 150%;
+}
+
+
+h1{
+    text-align: center;
+    color: green;
+    font-size: 60px;
+}
+
+.cad{
+    font-size: 60px;
+    position: absolute;
+    color:green;
+    
+}
