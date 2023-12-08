@@ -6,7 +6,7 @@
     <title>Ranking</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="fundo">
 
     <h1>
         Cadastrar jogadores
@@ -14,12 +14,15 @@
 
     <div>
         <form action="#" th:action="@{cadastroRanking}" th:object="${player}" method="post" >
-            <label class="lbl" for="nome">nome</label>
-            <input  th:field="*{nome}" id="nome" class="caixa" placeholder="Digite o seu nome" type="text">
-            <label class="lbl" for="nick">nick</label>
-            <input  th:field="*{nick}" id="nick" class="caixa" placeholder="Digite seu Nick" type="text">
-            <label class="lbl" for="jogo favorito">jogo favorito</label>
-            <input  th:field="*{jogo}" id="jogo favorito" class="caixa" placeholder="Jogo Favorito" type="text">
+            <label class="lbl" for="nome">Nome</label>
+            <input  th:field="*{nome}" id="nome" class="caixa" placeholder="Digite o nome do jogador" type="text">
+
+            <label class="lbl" for="nick">Número</label>
+            <input  th:field="*{nick}" id="nick" class="caixa" placeholder="Digite o número do jogador" type="text">
+
+            <label class="lbl" for="jogo favorito">Clube</label>
+            <input  th:field="*{jogo}" id="jogo favorito" class="caixa" placeholder="Digite o clube do jogador" type="text">
+
             <input type="submit" class="primary_button">
         </form>
     </div>

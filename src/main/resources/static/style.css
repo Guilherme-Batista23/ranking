@@ -1,17 +1,106 @@
-.background {
-   color:  blue;
+.background::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("312312.jpg");
+    opacity: 0.3;
+    z-index: -1;
+    width: 100%;
 }
 
+.fundo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("endrick.webp");
+    opacity: 0.3;
+    z-index: -1;
+    width: 100%;
+}
 
 h1{
+    color: black;
     text-align: center;
-    color: green;
-    font-size: 60px;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: green;
 }
 
-.cad{
+
+li{
+    font-size: 60px;
+    text-decoration: none;
+    text-align: right;
+    top: 400px;
+    position: relative;
+    list-style-type: none;
+
+}
+li:hover{
     font-size: 60px;
     position: absolute;
-    color:green;
+    text-decoration: none;
+    text-align: right;
+    top: 400px;
+    position: relative;
+    list-style-type: none;
+}
+
+a {
+text-decoration: none;
+color: green;
+-webkit-text-stroke-width: 1px; 
+-webkit-text-stroke-color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(12, 94, 26);
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    }
+
     
+.lbl {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+
+.caixa{
+    width: 25%;
+  height: 35px;
+  border-color: rgb(30, 210, 60);
+  border-radius: 15px;
+  margin: 10px auto 0px auto;
+  display: block;
+}
+
+.primary_button{
+    background-color:  rgb(49, 185, 8);
+    font-size: 30px;
+    display: block;
+    border-radius: 10px;
+    margin: 30px auto;
+    opacity: 70%;
+}
+
+.primary_button:hover{
+    background-color:  rgb(49, 185, 8);
+    font-size: 30px;
+    display: block;
+    border-radius: 10px;
+    margin: 30px auto;
+    opacity: 100%;
 }
